@@ -1,0 +1,37 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext"
+        ],
+        "types": [
+            "vite/client"
+        ],
+        "allowJs": false,
+        "skipLibCheck": false,
+        "esModuleInterop": false,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "noFallthroughCasesInSwitch": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "jsx": "react-jsx"
+    },
+    "include": [
+        "src/**/*.jsx",
+        "src/**/*.js",
+        "src/Pages/LoginUser.tsx",
+        "src/Components/Header.tsx",
+        "src/Pages/RegisterAdmin.tsx",
+        "src/Pages/RegisterUser.tsx",
+        "src/Pages/ShowAdmin.jsx",
+        "src/Pages/ShowUser.tsx"
+, "src/index.jsx", "src/Routes.jsx", "src/Components/ViewContent.jsx"    ],
+    "exclude": []
+}

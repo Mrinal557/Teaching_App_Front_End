@@ -1,0 +1,47 @@
+.inp-box {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    width: 50%;
+    /* background-image: linear-gradient(45deg, rgb(194, 191, 24), rgb(226, 52, 52)); */
+}
+
+.email-input {
+    display: flex;
+    margin: auto;
+    margin-top: 5%;
+    width: 80%;
+    height: 30px;
+    border: 2px solid pink;
+}
+
+.pass-input {
+    display: flex;
+    margin: auto;
+    margin-top: 5%;
+    width: 80%;
+    height: 30px;
+    border: 2px solid pink;
+}
+
+.login-btn {
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+.switch-btn {
+    float: right;
+}
+
+.switch {
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+.forgot-pass {
+    display: flex;
+    justify-content: center;
+}
