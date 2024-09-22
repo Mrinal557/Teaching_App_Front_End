@@ -11,7 +11,7 @@ const ViewContent = () => {
         try {
             const token = localStorage.getItem('adminToken');
             // console.log('adminToken: ', token);
-            const response = await axios.get(`http://localhost:5000/api/content/admin/${subject}/${section}`, {
+            const response = await axios.get(`https://teaching-app-back-end.onrender.com/api/content/admin/${subject}/${section}`, {
                 headers: {
                     'Authorization': `Bearer ${token}`,
                 }

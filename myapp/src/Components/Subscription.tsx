@@ -8,7 +8,7 @@ const Subscription = () => {
 
   const handleSubscription = async () => {
     try {
-      const res = await axios.post(`http://localhost:5000/api/subscription/subscribe/${subject}/${section}`, {
+      const res = await axios.post(`https://teaching-app-back-end.onrender.com/api/subscription/subscribe/${subject}/${section}`, {
         subject,
         section,
       }, {

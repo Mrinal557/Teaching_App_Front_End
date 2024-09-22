@@ -29,7 +29,7 @@ const Subscribe = () =>
             {
                 const token = localStorage.getItem('userToken');
                 if (!token) throw new Error('No token found');
-                const response = await axios.get(`http://localhost:5000/api/content/${sub}/${sec}`, {
+                const response = await axios.get(`https://teaching-app-back-end.onrender.com/api/content/${sub}/${sec}`, {
                     headers: { 'Authorization': `Bearer ${token}` }
                 });
                 setContent(response.data);
@@ -70,7 +70,7 @@ const Subscribe = () =>
         {
             const token = localStorage.getItem('userToken');
             if (!token) throw new Error('No token found');
-            const response = await axios.post('http://localhost:5000/api/subscriptions/subscribe', {
+            const response = await axios.post('https://teaching-app-back-end.onrender.com/api/subscriptions/subscribe', {
                 subject: sub,
                 section: sec,
                 phoneNumber
@@ -177,7 +177,7 @@ const Subscribe = () =>
             const token = localStorage.getItem('userToken');
             if (!token) throw new Error('No token found');
 
-            const response = await axios.post('http://localhost:5000/api/subscriptions/subscribe', {
+            const response = await axios.post('https://teaching-app-back-end.onrender.com/api/subscriptions/subscribe', {
                 subject: sub,
                 section: sec,
                 phoneNumber,

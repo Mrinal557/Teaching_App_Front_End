@@ -13,7 +13,7 @@ const RegisterUser = () =>
     const navigate = useNavigate();
     function register()
     {
-        axios.post('http://localhost:5000/api/auth/registerUser', {
+        axios.post('https://teaching-app-back-end.onrender.com/api/auth/registerUser', {
             email: email,
             password: password
         }).then((res) =>

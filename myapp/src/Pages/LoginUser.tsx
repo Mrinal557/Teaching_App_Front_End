@@ -15,7 +15,7 @@ const LoginUser = () =>
     {
         try
         {
-            const response = await axios.post('http://localhost:5000/api/auth/loginUser', { email, password });
+            const response = await axios.post('https://teaching-app-back-end.onrender.com/api/auth/loginUser', { email, password });
             const token = response.data.token;
             localStorage.setItem('userToken', token);
             navigate("/homeUser");

@@ -27,7 +27,7 @@ const UploadContent = () => {
                 throw new Error('No token found');
             }
 
-            const response = await axios.post('http://localhost:5000/api/content/upload', contentData, {
+            const response = await axios.post('https://teaching-app-back-end.onrender.com/api/content/upload', contentData, {
                 headers: {
                     'Content-Type': 'application/json',
                     'Authorization': `Bearer ${token}`,

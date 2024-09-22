@@ -10,7 +10,7 @@ const Lectures = ({ subject, section }) => {
     const fetchLectures = async () => {
       try {
         const token = localStorage.getItem('token'); // assuming token is stored in localStorage
-        const response = await axios.get(`http://localhost:5000/api/content/lectures`, {
+        const response = await axios.get(`https://teaching-app-back-end.onrender.com/api/content/lectures`, {
           headers: {
             Authorization: `Bearer ${token}`
           },
@@ -41,7 +41,7 @@ const Lectures = ({ subject, section }) => {
           <li key={lecture._id}>
             <h3>{lecture.title}</h3>
             <video width="600" controls>
-              <source src={`http://localhost:5000/${lecture.videoPath}`} type="video/mp4" />
+              <source src={`https://teaching-app-back-end.onrender.com/${lecture.videoPath}`} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </li>

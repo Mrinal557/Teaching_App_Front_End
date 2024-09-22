@@ -28,7 +28,7 @@ const ShowUser = () => {
             // console.log('user token: ', token);
             if (!token) throw new Error('No token found');
 
-            await axios.get('http://localhost:5000/api/subscription/subscriptions', {
+            await axios.get('https://teaching-app-back-end.onrender.com/api/subscription/subscriptions', {
                 headers: { Authorization: `Bearer ${token}` }
             }).then((res) => { setSubs(res.data); })
                 .catch((err) => console.log(err));
@@ -48,7 +48,7 @@ const ShowUser = () => {
     const showL = (sub: keyof Subscriptions) => () => {
         const isSubscribed = subs[sub].videoLectures;
         if (isSubscribed) {
-            // `http://localhost:5000/api/content/${subject}/${section}`
+            // `https://teaching-app-back-end.onrender.com/api/content/${subject}/${section}`
             // alert('redirecting you to VL page!');
             navigate(`/content/${sub}/videoLectures`);
         } else {

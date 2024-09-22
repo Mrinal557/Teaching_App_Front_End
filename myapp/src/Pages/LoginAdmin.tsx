@@ -18,7 +18,7 @@ const LoginAdmin = () => {
         }
         try {
             if (email === 'm123@gmail.com' || email === 'mrinal.annand@gmail.com') {
-                const response = await axios.post('http://localhost:5000/api/auth/loginAdmin', { email, password });
+                const response = await axios.post('https://teaching-app-back-end.onrender.com/api/auth/loginAdmin', { email, password });
                 const token = response.data.token;
                 localStorage.setItem('adminToken', token);
                 navigate("/homeAdmin");
