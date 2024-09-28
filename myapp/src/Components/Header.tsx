@@ -1,10 +1,14 @@
 import React from 'react'
 
-const Header = () =>
-{
+const Header = () => {
     return (
         <div>
-            <h1 className="header" style={{ textAlign: "center", alignItems: "center", justifyContent: "center", backgroundColor: "#8f3769e3" }}>Pocket Chemistry</h1>
+            <h1 className="header" style={{
+                textAlign: "center",
+                alignItems: "center",
+                justifyContent: "center",
+                backgroundColor: "#d7abd5"
+            }}>Pocket Chemistry</h1>
         </div>
     )
 }

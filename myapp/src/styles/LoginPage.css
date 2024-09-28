@@ -1,28 +1,30 @@
+* {
+    /* background-color: rgb(129, 133, 137); */
+}
+
 .inp-box {
     margin: auto;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
-    width: 50%;
+    border: 1px solid rgb(243, 217, 239);
+    border-radius: 5%;
+    width: 60%;
+    background-color: #f8f6f2;
+    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw-qq6t6qiZaa9nGy-7LkSze8ESiro_8HfSg&s"); */
+    /* position:fixed; */
     /* background-image: linear-gradient(45deg, rgb(194, 191, 24), rgb(226, 52, 52)); */
 }
 
 .email-input {
     display: flex;
-    margin: auto;
-    margin-top: 5%;
-    width: 80%;
-    height: 30px;
-    border: 2px solid pink;
+    justify-content: center;
+    margin-top: 2%;
 }
 
 .pass-input {
     display: flex;
-    margin: auto;
-    margin-top: 5%;
-    width: 80%;
-    height: 30px;
-    border: 2px solid pink;
+    justify-content: center;
+    margin-top: 2%;
 }
 
 .login-btn {
@@ -42,6 +44,29 @@
 }
 
 .forgot-pass {
+    display: flex;
+    justify-content: center;
+    margin-top: 3px;
+}
+
+.spinner {
+    animation-name: spin;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#emailError {
     display: flex;
     justify-content: center;
 }
